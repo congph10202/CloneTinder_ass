@@ -1,11 +1,11 @@
 {
   "name": "clonetinder_ass",
   "version": "1.0.0",
-  "description": "TINDER",
-  "main": "index.html",
+  "description": "CLONETINDER",
+  "main": "index.js",
   "scripts": {
-    "start": "index.html"
+    "test": "index.html"
   },
-  "author": "unnamed",
+  "author": "no name",
   "license": "ISC"
 }
