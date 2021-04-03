@@ -1,10 +1,15 @@
 {
   "name": "clonetinder_ass",
   "version": "1.0.0",
-  "description": "CLONETINDER",
-  "main": "index.js",
+  "description": "TINDER",
+  "main": "inedx.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "index.html"
+    "start": "node index.js"
   },
   "author": "no name",
   "license": "ISC"
