@@ -20,4 +20,7 @@ app.get('/signup.handlebars', function (req,res){
 app.get('/signin.handlebars', function (req,res){
     res.render('signin'); //file name
 });
+app.get('/trangchu', function (req,res){
+        res.render('home'); //file name
+});
 app.listen(process.env.PORT||4000);
