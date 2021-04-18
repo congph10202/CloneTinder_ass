@@ -1,0 +1,58 @@
+<head>
+    <style>
+        tr{
+            background-color: beige;
+        }
+    </style>
+
+</head>
+<style>
+    body{
+        background-color: tan;
+    }
+    .btn btn-primary btn-sm{
+        width: 70px;
+        margin: 3px;
+    }
+</style>
+<h3>{{titlelogin}}</h3>
+<table class="table table-bordered" style="margin-top: -10px" >
+    <tr>
+        <th>FULL NAME</th>
+        <th>USERNAME</th>
+        <th>AGE</th>
+        <th>NUMBER PHONE</th>
+        <th>ADDRESS</th>
+        <th>HOBBIES</th>
+        <th>PET</th>
+        <th>ACTION</th>
+    </tr>
+    <tr>
+        <td>Nguyễn Bá Công</td>
+        <td>congnbph10202</td>
+        <td>19</td>
+        <td>PH10202</td>
+        <td>Số 1 Trịnh Văn Bô</td>
+        <td>Lập trình máy tính - thiết bị di động</td>
+        <td>PT15354</td>
+        <td>
+            <a href="#" class="btn btn-primary btn-sm" style="width: 70px; margin: 2px">  EDIT </a>
+            <a href="#" class="btn btn-danger btn-sm" style="width: 70px; margin: 2px">DELETE</a>
+        </td>
+    </tr>
+    {{#each ups}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.username}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.address}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.hobbies}}</td>
+            <td>{{this.pet}}</td>
+            <td>
+                <a href="/{{this._id}}" class="btn btn-primary btn-sm" style="width: 70px; margin: 2px">EDIT</a>
+                <a href="/delete/{{this._id}}" onclick="return confirm('Are you sure ?')" class="btn btn-danger btn-sm " style="width: 70px; margin: 2px">DELETE</a>
+            </td>
+        </tr>
+    {{/each}}
+</table>

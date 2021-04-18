@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form action="/insert" method="post" enctype="multipart/form-data">
+
+    <input name="userName" placeholder="Enter user">
+    <input name="password" placeholder="Enter password">
+    <input name="name" placeholder="Emter name">
+    <input name="address" placeholder="Emter address">
+    <input name="number_phone" placeholder="Enter number_phone">
+    <input name="image" type="file">
+    <button type="submit">Save</button>
+
+</form>
+{{#each users}}
+    <li>{{this.userName}}</li>
+    <li>{{this.password}}</li>
+    <li>{{this.name}}</li>
+    <li>{{this.address}}</li>
+    <li>{{this.number_phone}}</li>
+    <li>{{this.image}}</li>
+    <div>--------------------------------------</div>
+
+{{/each}}
